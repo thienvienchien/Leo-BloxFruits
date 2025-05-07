@@ -8714,7 +8714,7 @@ v17.ToggleRejoin:SetValue(true);
 spawn(function()
     while wait() do
         if _G.AutoRejoin then
-            getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(v808)
+            getgenv().rejoin = game:GetService("CoreGui").PromptGui.promptOverlay.ChildAdded:Connect(function(v808)
                 if ((v808.Name == "ErrorPrompt") and v808:FindFirstChild("MessageArea") and v808.MessageArea:FindFirstChild("ErrorFrame")) then
                     game:GetService("TeleportService"):Teleport(game.PlaceId);
                 end
